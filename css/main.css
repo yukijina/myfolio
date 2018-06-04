@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*=====================================
+========== Common property==============
+yellow color #CFC835
+green color #158F8A
+gray color #7E8287
+========================================*/
+
+/*========================================
+===========================================
+[1] Navigation
+[2] header
+[3] Section - ABOUT
+[4] Section - SERVICE
+[5] Section - Contact Me
+[6] Footer
+=============================================
+==========================================*/
+
+/*====Common tag===========  */
+a {
+  text-decoration: none;
+}
+h3 {
+  line-height: 2.8rem;
+  padding-bottom: 40px;
+  font-size: 1rem;
+  font-weight:400;
+  color: #7E8287;
+}
+
+/*======================================
+=========[1] Navigation================= */
+nav {
+  background-color: #158F8A;
+  height:60px;
+  text-transform: uppercase;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo {
+  float: left;
+  font-size: 1.6em;
+  font-weight: 700;
+  margin: 10px 25px;
+}
+
+.logo a {
+  color: #fff;
+}
+
+.logo span {
+  color: #CFC835;
+}
+
+.navigation ul {
+  position: absolute;
+  right: 25px;
+  top: 18px;
+}
+.navigation li {
+  display: inline-block;
+  padding-left: 30px;
+}
+
+.navigation li a {
+  color: #fff;
+  font-size: 1em;
+}
+
+.navigation a:hover {
+  color: #CFC835;
+  transition: 0.2s;
+}
+
+/*======================================
+=========[2] Header================= */
+header {
+  background-image: url("../img/headerbg.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 100% 50%;
+  text-align: center;
+  height: 660px;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 2rem;
+  padding-top: 18%;
+  padding-bottom: 3%;
+}
+
+header h2 {
+  font-size: 4.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
+header p {
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
+
+header img {
+  padding-bottom: 35px;
+}
+
+header a {
+  color: #000;
+  background-color: #CFC835;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 35px;
+  border-radius: 3px;
+}
+
+header a:hover {
+  background-color: #fff;
+  transition: 0.2s;
+}
+
+/*======================================
+=========[3] Section About ================= */
+#about {
+  text-align: center;
+  padding: 10% 0;
+  color: #7E8287;
+  height: auto;
+}
+
+   /* all 'title' tag for #about #service #contact */
+.title {
+  font-size:2.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #158F8A;
+}
+
+.border {
+  padding-top:3%;
+  padding-bottom: 3%;
+}
+
+#about span {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.aboutbox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.box {
+  text-align: center;
+  border-right: 1px solid #7E8287;
+  padding: 0 4%;
+  width: 25%;
+}
+
+.box:last-child {
+  border: none;
+}
+
+.box i {
+  font-size: 180%;
+  color: #158F8A;
+}
+
+.box h4 {
+  padding: 12px 0;
+}
+.box p {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+/*======================================
+=========[4] Section - Service ================= */
+#service {
+  background-color: #FFF5EE;
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  height: 750px;
+}
+
+.service-right-item {
+  width: 50%;
+  height: 100%
+}
+.service-right-item img {
+  height: 100%;
+}
+
+.service-left-item {
+  width: 40%;
+  padding-top: 8%;
+  padding-right: 3%;
+}
+
+.service-box {
+  display: flex;
+  flex-flow: row wrap;
+}
+#service .box {
+  border-style: none;
+  color: #7E8287;
+  width: 50%;
+  text-align: left;
+  padding-bottom: 10%;
+}
+
+/*======================================
+=========[5] Section -Contact me ========== */
+#contact-me {
+  padding: 8%;
+  text-align: center;
+}
+.contactForm {
+    background-color: #0B0B0B;
+    color: #7E8287;
+    padding: 50px 25px;
+  }
+.contactForm input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #7E8287;
+    text-align: center;
+    width: 60%;
+    height: 30px;
+    font-size: 1rem;
+    color: #7E8287;
+  }
+
+.contactForm textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #7E8287;
+  border-top: 1px solid #7E8287;
+  color: #7E8287;
+  font-size: 24px;
+  text-align: center;
+  width: 60%;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  outline: none;
+}
+
+.contactForm button {
+  background-color: #CFC835;
+  border:none;
+  border-radius: 3px;
+  clear: both;
+  color: #0B1016;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 35px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  }
+
+.contactForm button:hover {
+  background-color: #fff;
+  color: #0B1016;
+  cursor: pointer;
+}
+
+/*======================================
+=========[6] Footer ========== */
+footer {
+  background: #000;
+  padding: 2% 0;
+  width: 100%
+}
+
+footer p {
+    color: #7E8287;
+    text-align: center;
+}
+
+
+/*========== MediaQuery ===============*/
+@media(max-width: 1000px) {
+  .service-right-item {
+    display: none;
+  }
+  .service-left-item {
+      width: 90%;
+  }
+}
+
+@media(max-width: 650px) {
+  nav {
+    height: 80px;
+  }
+  .logo {
+    float: none;
+    text-align: center;
+  }
+   .navigation  {
+    clear: both;
+    text-align: center;
+  }
+  .navigation ul {
+    position: static;
+    right: 0;
+    top: 0;
+  }
+  .navigation li {
+      display: inline;
+      padding-left: 12px;
+  }
+  .navigation li:first-child {
+    padding-left: 0;
+  }
+  .navigation li a {
+    font-size: 0.8rem;
+  }
+  header {
+    height: 500px;
+  }
+  header h1 {
+      font-size: 1.3rem;
+      padding-top: 100px;
+    }
+  header h2 {
+    font-size: 2.5rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 0.9rem;
+  }
+  #about span {
+    font-size: 1rem;
+  }
+  #about .box {
+    width: 45%;
+    margin-bottom: 10%;
+    border: none;
+  }
+}
